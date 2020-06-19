@@ -1,19 +1,7 @@
 # create-babel
 
-Create a new Babel-configured app in the current directory:
+Create a new Babel-configured app in a new `./my-app` directory:
 
 ```shell
-$ npm init babel
-```
-
-Or with defaults:
-
-```shell
-$ npm init babel -y
-```
-
-Or in another directory:
-
-```shell
-$ npm init babel ./my-app
+$ npm init babel my-app
 ```
