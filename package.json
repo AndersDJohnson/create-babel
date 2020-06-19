@@ -8,6 +8,7 @@
   },
   "author": "Anders D. Johnson",
   "license": "ISC",
+  "repository": "AndersDJohnson/create-babel",
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@babel/node": "^7.10.1",
