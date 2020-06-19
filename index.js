@@ -154,6 +154,8 @@ fs.writeFileSync('src/index.js', '')
 
 const package = require(`${cwd}/package.json`)
 
+package.main = 'dist/index.js'
+
 package.scripts = {
   ...package.scripts,
   build: 'babel src --out-dir dist',
