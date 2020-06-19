@@ -14,6 +14,8 @@ fs.mkdirSync(appDir)
 
 process.chdir(appDir)
 
+const cwd = process.cwd()
+
 spawnSync('npm', 'init -y'.split(' '), {
   stdio: 'inherit'
 })
@@ -150,7 +152,7 @@ dist
 fs.mkdirSync('src');
 fs.writeFileSync('src/index.js', '')
 
-const package = require('./package.json')
+const package = require(`${cwd}/package.json`)
 
 package.scripts = {
   ...package.scripts,
