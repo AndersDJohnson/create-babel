@@ -24,7 +24,7 @@ spawnSync('npm', 'add -D @babel/core @babel/cli @babel/node @babel/preset-env @b
   stdio: 'inherit'
 })
 
-spawnSync('npm', 'npm add @babel/runtime'.split(' '), {
+spawnSync('npm', 'add @babel/runtime'.split(' '), {
   stdio: 'inherit'
 })
 
