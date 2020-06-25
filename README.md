@@ -2,7 +2,7 @@
 
 Like `create-react-app`, but for a basic Babel setup.
 
-Create a app in a new `./my-app` directory:
+Create an app in a new `./my-app` directory:
 
 ```shell
 $ npm init babel my-app
