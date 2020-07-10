@@ -11,14 +11,8 @@
   "license": "ISC",
   "repository": "AndersDJohnson/create-babel",
   "funding": "https://github.com/sponsors/AndersDJohnson",
-  "devDependencies": {
-    "@babel/core": "^7.10.2",
-    "@babel/node": "^7.10.1",
-    "@babel/plugin-transform-runtime": "^7.10.1",
-    "@babel/preset-env": "^7.10.2",
-    "@babel/register": "^7.10.1"
-  },
+  "files": ["index.js"],
   "dependencies": {
-    "base-create": "^1.1.1"
+    "base-create": "^1.2.0"
   }
 }
