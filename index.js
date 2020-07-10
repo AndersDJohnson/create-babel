@@ -15,6 +15,7 @@ create("babel", {
     main: "dist/index.js",
     keywords: ["create-babel"],
     scripts: {
+      start: "node .",
       build: "babel src --out-dir dist",
       "build:watch": "npm run build -- --watch",
     },
