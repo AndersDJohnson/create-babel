@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-const fs = require("fs");
 const create = require("base-create");
 
 create("babel", {
@@ -13,21 +12,21 @@ create("babel", {
     "@babel/plugin-transform-runtime",
   ],
   package: {
-    main: "dist/main.js",
+    main: "dist/index.js",
+    keywords: ["create-babel"],
     scripts: {
       build: "babel src --out-dir dist",
       "build:watch": "npm run build -- --watch",
     },
   },
+  files: [
+    {
+      path: "babel.config.json",
+      contents: {
+        "presets": ["@babel/preset-env"],
+        "plugins": ["@babel/plugin-transform-runtime"]
+      }
+    },
+    "src/index.js"
+  ]
 });
-
-fs.writeFileSync(
-  "babel.config.json",
-  `{
-  "presets": ["@babel/preset-env"],
-  "plugins": ["@babel/plugin-transform-runtime"]
-}`
-);
-
-fs.mkdirSync("src");
-fs.writeFileSync("src/index.js", "");
