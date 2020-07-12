@@ -1,6 +1,6 @@
 {
   "name": "create-babel",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Create app with Babel configuration.",
   "main": "index.js",
   "bin": "index.js",
