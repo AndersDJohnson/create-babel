@@ -14,6 +14,7 @@ create({
   package: {
     main: "dist/index.js",
     keywords: ["create-babel"],
+    files: ["dist"],
     scripts: {
       start: "node .",
       build: "babel src --out-dir dist",
